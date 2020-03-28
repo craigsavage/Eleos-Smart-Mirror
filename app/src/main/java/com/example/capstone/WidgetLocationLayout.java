@@ -82,77 +82,77 @@ public class WidgetLocationLayout extends AppCompatDialogFragment {
         // Assigns the clicked location to the "location" variable
         btnTopBar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Top Bar clicked", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), "Top Bar clicked", Toast.LENGTH_SHORT).show();
                 location = "Location: Top Bar";
                 colorButtons(btnTopBar);   // Highlight button
             }
         });
         btnTopLeft.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Top Left clicked", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), "Top Left clicked", Toast.LENGTH_SHORT).show();
                 location = "Location: Top Left";
                 colorButtons(btnTopLeft);   // Highlight button
             }
         });
         btnTopCenter.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Top Center clicked", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), "Top Center clicked", Toast.LENGTH_SHORT).show();
                 location = "Location: Top Center";
                 colorButtons(btnTopCenter);   // Highlight button
             }
         });
         btnTopRight.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Top Right clicked", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), "Top Right clicked", Toast.LENGTH_SHORT).show();
                 location = "Location: Top Right";
                 colorButtons(btnTopRight);   // Highlight button
             }
         });
         btnUpperThird.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Upper Third clicked", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), "Upper Third clicked", Toast.LENGTH_SHORT).show();
                 location = "Location: Upper Third";
                 colorButtons(btnUpperThird);   // Highlight button
             }
         });
         btnMiddleCenter.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Middle Center clicked", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), "Middle Center clicked", Toast.LENGTH_SHORT).show();
                 location = "Location: Middle Center";
                 colorButtons(btnMiddleCenter);   // Highlight button
             }
         });
         btnLowerThird.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Lower Third clicked", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), "Lower Third clicked", Toast.LENGTH_SHORT).show();
                 location = "Location: Lower Third";
                 colorButtons(btnLowerThird);   // Highlight button
             }
         });
         btnBottomLeft.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Bottom Left clicked", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), "Bottom Left clicked", Toast.LENGTH_SHORT).show();
                 location = "Location: Bottom Left";
                 colorButtons(btnBottomLeft);   // Highlight button
             }
         });
         btnBottomCenter.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Bottom Center clicked", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), "Bottom Center clicked", Toast.LENGTH_SHORT).show();
                 location = "Location: Bottom Center";
                 colorButtons(btnBottomCenter);   // Highlight button
             }
         });
         btnBottomRight.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Bottom Right clicked", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), "Bottom Right clicked", Toast.LENGTH_SHORT).show();
                 location = "Location: Bottom Right";
                 colorButtons(btnBottomRight);   // Highlight button
             }
         });
         btnBottomBar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Bottom Bar clicked", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), "Bottom Bar clicked", Toast.LENGTH_SHORT).show();
                 location = "Location: Bottom Bar";
                 colorButtons(btnBottomBar);   // Highlight button
             }

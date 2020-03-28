@@ -5,8 +5,15 @@
     <string name="moods">Moods</string>
     <string name="record">Record</string>
     <string name="home">Home</string>
+    <string name="send">Send</string>
     <string name="camera_description">Allows user to record themself</string>
     <string name="eleos_smart_mirror_logo">Eleos Smart Mirror Logo</string>
     <string name="colours">Colours</string>
     <string name="colour_your_moods">Colour Your Moods!</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="eleos_logo">ELEOS Logo</string>
+    <string name="opens_the_add_widgets_page">Opens the add widgets page</string>
+    <string name="opens_the_profile_page">Opens the profile page</string>
+    <string name="opens_the_setup_page">Opens the setup page</string>
 </resources>

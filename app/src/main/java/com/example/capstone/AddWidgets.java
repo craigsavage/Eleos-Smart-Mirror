@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 public class AddWidgets extends AppCompatActivity implements WidgetLocationLayout.WidgetLocationLayoutListener {
 
@@ -62,7 +63,7 @@ public class AddWidgets extends AppCompatActivity implements WidgetLocationLayou
         lvAddItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(AddWidgets.this,"You clicked: " + mirrorWidgets.get(position).getWidgetName() + "!!", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(AddWidgets.this,"You clicked: " + mirrorWidgets.get(position).getWidgetName() + "!!", Toast.LENGTH_SHORT).show();
                 openDialog(position);
                 lvAddItems.setAdapter(mirrorItemsAdapter);
             }
@@ -79,7 +80,18 @@ public class AddWidgets extends AppCompatActivity implements WidgetLocationLayou
     public void applyLocations(int position, String location) {
         // Set location to object position
         mirrorWidgets.get(position).setWidgetLocation(location);
-        Toast.makeText(AddWidgets.this, "Position clicked: " + position + "\nLocation: " + location, Toast.LENGTH_LONG).show();
+        mirrorItemsAdapter.notifyDataSetChanged();  // Updates list view
+        // Toast.makeText(AddWidgets.this, "Position clicked: " + position + "\nLocation: " + location, Toast.LENGTH_LONG).show();
+    }
+
+    /**
+     * Sends info to smart mirror
+     */
+    public void sendLocations(View v) throws InterruptedException {
+        sleepFunc(1);  // Sleep
+        Toast.makeText(AddWidgets.this, "Data received!", Toast.LENGTH_LONG).show();
+
+        finish();
     }
 
     /**
@@ -87,5 +99,9 @@ public class AddWidgets extends AppCompatActivity implements WidgetLocationLayou
      */
     public void goHome(View v) {
         finish();
+    }
+
+    public void sleepFunc(int x) throws InterruptedException {
+        TimeUnit.SECONDS.sleep(x); // Sleeps for x seconds
     }
 }

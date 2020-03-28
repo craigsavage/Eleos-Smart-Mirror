@@ -17,7 +17,6 @@ public class SettingsActivity extends AppCompatActivity {
 
     Button btnHome;
     ImageView ivRecord;
-    LinearLayout llBluetooth;
 
     BluetoothAdapter bluetoothAdapter;
 
