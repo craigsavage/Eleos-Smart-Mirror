@@ -38,7 +38,7 @@ public class SetupActivity extends AppCompatActivity {
         Toast.makeText(SetupActivity.this, "Turning on bluetooth", Toast.LENGTH_SHORT).show();
 
         // toggleBluetooth(); // Starts bluetooth connection
-        sleepFunc(1);  // Sleep
+        sleepFunc(2);  // Sleep
 
         Toast.makeText(SetupActivity.this, "Bluetooth successfully connected!", Toast.LENGTH_SHORT).show();
     }

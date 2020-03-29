@@ -32,7 +32,7 @@ public class WifiSetupActivity extends AppCompatActivity {
         String wifiPassword = et_wifiPassword.getText().toString();
 
         sleepFunc(1);  // Sleep
-        Toast.makeText(this, "Wifi credentials successfully sent to Smart Mirror", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Wifi information sent to Smart Mirror", Toast.LENGTH_SHORT).show();
         finish();
     }
 

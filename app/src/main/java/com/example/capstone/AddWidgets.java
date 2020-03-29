@@ -33,19 +33,19 @@ public class AddWidgets extends AppCompatActivity implements WidgetLocationLayou
 
         // Create widget objects
         WidgetObject clockWidget = new WidgetObject("Clock");
-        WidgetObject calendarWidget = new WidgetObject("Calendar");
+        WidgetObject hCalendarWidget = new WidgetObject("Holiday Calendar");
+        WidgetObject pCalendarWidget = new WidgetObject("Personal Calendar");
         WidgetObject currentWeatherWidget = new WidgetObject("Current Weather");
         WidgetObject WeatherForecastWidget = new WidgetObject("Weather Forecast");
-        WidgetObject NewsFeedWidget = new WidgetObject("News Feed");
-        WidgetObject ComplimentsWidget = new WidgetObject("Compliments");
+        WidgetObject facialAnalysisWidget = new WidgetObject("Facial Analysis");
 
         // Add objects to the array list
         mirrorWidgets.add(clockWidget);
-        mirrorWidgets.add(calendarWidget);
+        mirrorWidgets.add(hCalendarWidget);
+        mirrorWidgets.add(pCalendarWidget);
         mirrorWidgets.add(currentWeatherWidget);
         mirrorWidgets.add(WeatherForecastWidget);
-        mirrorWidgets.add(NewsFeedWidget);
-        mirrorWidgets.add(ComplimentsWidget);
+        mirrorWidgets.add(facialAnalysisWidget);
 
         // Populate list with mirror items
         mirrorItemsAdapter = new WidgetAdapter(this, mirrorWidgets);

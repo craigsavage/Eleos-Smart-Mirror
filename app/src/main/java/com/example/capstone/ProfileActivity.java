@@ -3,9 +3,12 @@ package com.example.capstone;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.concurrent.TimeUnit;
@@ -40,10 +43,14 @@ public class ProfileActivity extends AppCompatActivity {
             name = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
 
             // Confirm that the profile has been created
-            String confirmationMsg = String.format("Thank you %s, your profile has been submitted successfully to the Mirror! Please Stand infront of the Mirror.", name);
+            String confirmationMsg = "Profile has been submitted to the Mirror!\nPlease Stand in front of the Mirror.";
 
             sleepFunc(1);  // Sleep
-            Toast.makeText(this, confirmationMsg , Toast.LENGTH_LONG).show();
+            Toast toast = Toast.makeText(this, confirmationMsg , Toast.LENGTH_LONG);
+
+            ((TextView)((LinearLayout)toast.getView()).getChildAt(0))
+                    .setGravity(Gravity.CENTER_HORIZONTAL);
+            toast.show();
 
             finish();
         }
