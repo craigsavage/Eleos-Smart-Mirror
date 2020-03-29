@@ -101,7 +101,12 @@ public class AddWidgets extends AppCompatActivity implements WidgetLocationLayou
         finish();
     }
 
+    /**
+     * Sleeps for x seconds
+     * @param x is the time in seconds to sleep
+     * @throws InterruptedException
+     */
     public void sleepFunc(int x) throws InterruptedException {
-        TimeUnit.SECONDS.sleep(x); // Sleeps for x seconds
+        TimeUnit.SECONDS.sleep(x);
     }
 }

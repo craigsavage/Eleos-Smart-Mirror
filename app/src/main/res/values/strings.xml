@@ -16,4 +16,5 @@
     <string name="opens_the_add_widgets_page">Opens the add widgets page</string>
     <string name="opens_the_profile_page">Opens the profile page</string>
     <string name="opens_the_setup_page">Opens the setup page</string>
+    <string name="password">Password</string>
 </resources>

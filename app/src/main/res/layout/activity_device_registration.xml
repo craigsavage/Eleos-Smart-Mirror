@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/main_dark"
     android:orientation="vertical"
-    tools:context=".ProfileActivity">
+    tools:context=".DeviceRegistrationActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit the form then stand in front of the mirror to allow the Eleos smart mirror to learn your face."
+            android:text="Request a key to register your device with Eleos Smart Mirror."
             android:textAlignment="center"
             android:textColor="@color/colorWhite"
             android:textSize="28sp" />
@@ -38,39 +38,42 @@
         android:paddingEnd="40dp"
         android:paddingBottom="30dp">
 
-        <EditText
-            android:id="@+id/et_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:ems="10"
-            android:hint="Name"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/et_iCal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:ems="10"
-            android:hint="Google iCal Link"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textSize="20sp" />
-
         <Button
-            android:id="@+id/btnSend"
+            android:id="@+id/btnRequest"
             android:layout_width="200dp"
             android:layout_height="80dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/button_sm_blue"
             android:gravity="center"
-            android:onClick="sendProfileInfo"
+            android:onClick="requestKey"
             android:paddingBottom="4dp"
-            android:text="@string/send"
+            android:text="Request"
+            android:textColor="@color/colorWhite"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_fName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Response Code"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_sm_blue"
+            android:gravity="center"
+            android:onClick="registerDevice"
+            android:paddingBottom="4dp"
+            android:text="Submit"
             android:textColor="@color/colorWhite"
             android:textSize="26sp"
             android:textStyle="bold" />
@@ -81,7 +84,7 @@
             android:layout_height="50dp"
             android:background="@drawable/button_sm_blue"
             android:gravity="center"
-            android:onClick="cancelProfile"
+            android:onClick="cancelRegistration"
             android:paddingBottom="3dp"
             android:text="@android:string/cancel"
             android:textColor="@color/colorPrimaryDark"

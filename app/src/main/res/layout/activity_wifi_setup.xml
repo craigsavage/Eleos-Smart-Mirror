@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/main_dark"
     android:orientation="vertical"
-    tools:context=".ProfileActivity">
+    tools:context=".WifiSetupActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit the form then stand in front of the mirror to allow the Eleos smart mirror to learn your face."
+            android:text="Enter Wifi credentials to allow Eleos Smart Mirror to connect."
             android:textAlignment="center"
             android:textColor="@color/colorWhite"
             android:textSize="28sp" />
@@ -39,25 +39,25 @@
         android:paddingBottom="30dp">
 
         <EditText
-            android:id="@+id/et_name"
+            android:id="@+id/et_wifiName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:ems="10"
-            android:hint="Name"
+            android:hint="Wifi Name"
             android:inputType="textPersonName"
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/et_iCal"
+            android:id="@+id/et_wifiPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:ems="10"
-            android:hint="Google iCal Link"
-            android:inputType="textPersonName"
+            android:hint="@string/password"
+            android:inputType="textPassword"
             android:textAlignment="center"
             android:textSize="20sp" />
 
@@ -68,7 +68,7 @@
             android:layout_marginBottom="5dp"
             android:background="@drawable/button_sm_blue"
             android:gravity="center"
-            android:onClick="sendProfileInfo"
+            android:onClick="connectWifi"
             android:paddingBottom="4dp"
             android:text="@string/send"
             android:textColor="@color/colorWhite"
@@ -81,7 +81,7 @@
             android:layout_height="50dp"
             android:background="@drawable/button_sm_blue"
             android:gravity="center"
-            android:onClick="cancelProfile"
+            android:onClick="cancelWifi"
             android:paddingBottom="3dp"
             android:text="@android:string/cancel"
             android:textColor="@color/colorPrimaryDark"
